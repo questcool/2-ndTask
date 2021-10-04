@@ -33,9 +33,9 @@ function selectFromInterval(arr, int1, int2){
         throw new Error('Interval is not valid')
     }
 
-    let result = arr.filter((i)=> {
-        if(i >= (int1 > int2 ? int2 : int1) && i <= (int1 > int2 ? int1 : int2)){
-            return i;
+    let result = arr.filter((item)=> {
+        if(item >= (int1 > int2 ? int2 : int1) && item <= (int1 > int2 ? int1 : int2)){
+            return item;
         }
     });
     return result;
